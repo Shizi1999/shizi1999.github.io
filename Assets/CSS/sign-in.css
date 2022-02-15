@@ -1,0 +1,201 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.nav__item{
+    display: flex;
+    align-items: center;
+}
+.nav__item-title{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+.nav__item-logo{
+    height: 50px;
+    margin-bottom: 14px;
+    margin-right: 10px;
+}
+.nav__item-help-link{
+    text-decoration: none;
+    color: #f15135;
+}
+/* container */
+.container{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(238 77 45);
+}
+.container__content{
+    margin: 0 auto;
+    height: 100%;
+    width: 1040px;
+    display: flex;
+}
+.content__baner{
+    width: 640px;
+    height: 100%;
+}
+.content__sign-in{
+    width: 400px;
+    height: 100%;
+}
+.sign-in__form{
+    width: 100%;
+    height: 480px;
+    background-color: white;
+    margin-top: 60px;
+    border-radius: 4px;
+    align-content: center;
+}
+
+.form__header{
+    height: 60px;
+    padding: 22px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__header-title{
+    font-size: 20px;
+}
+.form__header-qr-title{
+    font-size: 14px;
+    font-weight: 700;
+    border:2px solid #ee4d2d;
+    padding: 17px 2px;
+    color: white;
+    background-color: #fd6546;
+    position: relative;
+    border-radius: 3px;
+}
+.form__header-qr-title::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent transparent transparent #fd6546;
+    right: -20px;
+    top: 18px;
+}
+.form__header-qr-title:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.form___username,.form__password{
+    height: 38px;
+    width: 340px;
+    margin: 24px 20px 24px 28px;
+    border: 1px solid black;
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.form__username-input,.form__password-input{
+    flex: 1 ;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-left: 2px;
+}
+.fa-eye-slash{
+    margin: 10px 6px;
+    cursor: pointer;
+}
+.form__sign-in-button{
+    margin: 0 22px 0 26px;
+    padding: 8px 136px 8px 134px;
+    color: white;
+    background-color: #ee4d2d;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 4px;
+    
+}
+.form__sign-in-button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.form__style-login{
+    margin: 24px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.form__style-login-link{
+    text-decoration: none;
+}
+.form__line{
+    margin: 24px 24px;
+    border-top: 2px solid gray;
+}
+.form__other-login{
+    display: flex;
+    margin: 0 26px;
+}
+.form__button{
+    width: 110px;
+    height: 40px;
+    
+    margin: 0 4px;
+}
+.form__facebook{
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #1877f2;
+}
+.form__google{
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #4285f4;
+}
+.form__apple{
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: black;
+}
+.fa-facebook-square{
+    color: white;
+    font-size: 24px;
+    margin: 0 4px;
+}
+.form__google-btn-icon{
+    width: 22px;
+    margin: 0 6px;
+    border-radius: 3px;
+}
+.fa-apple{
+    font-size: 24px;
+    margin: 0 12px;
+    color: white;
+}
+.form__btn-text{
+    color: white;
+}
+.form__other-login-link{
+    text-decoration: none;
+}
+.form__link-sign-up{
+    margin: 20px 0;
+    text-align: center;
+    color: gray;
+    font-weight: 100;
+}
+.form__link-sign-up-link{
+    text-decoration: none;
+    color: red;
+}
+.form__button:hover{
+    opacity: 0.9;
+}

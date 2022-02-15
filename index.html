@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assets/CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Assets/CSS/product.css">
+    <link rel="stylesheet" href="/Assets/CSS/slide.css">
+</head>
+<body>
+    <header class="header">
+        <!-- navbar -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item nav__list-item-line"><a href="/index.html" class="nav__list-link">Kênh Người Bán</a> </li>
+                <li class="nav__list-item nav__list-item-download nav__list-item-no-hover">
+                    <a href="" class="nav__list-link">Tải Ứng Dụng</a>
+                    <div class="qr__code">
+                        <img src="/Assets/IMG/qr_code.png" alt="" class="qr__code-img">
+                        <div class="qr__code-link">
+                            <a href=""><img src="/Assets/IMG/google_play.png" alt="" class="img__link-download"></a>
+                            <a href=""><img src="/Assets/IMG/app_store.png" alt="" class="img__link-download"></a>
+                        </div>
+                    </div>
+                 </li>
+                <li class="nav__list-item nav__list-item-line nav__list-item-no-hover">Kết Nối</li>
+                <li class="nav__list-item nav__list-item-icon">
+                    <a href="https://www.facebook.com/FoodyVietnam/" class="nav__icon"><i class="fab fa-facebook"></i></a>
+                    <a href="" class="nav__icon"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+            <ul class="nav__list">
+                <li class="nav__list-item nav__list-item-show-notify nav__list-item-no-hover">
+                    <i class="far fa-bell"></i>
+                    <a href="" class="nav__list-link">Thông Báo</a>
+                    <!-- header-notify -->
+                    <div class="nav__notify">
+                        <header class="nav__notify-header">
+                            <h3 class="notify-title">Thông báo mới nhận</h3>
+                        </header>
+                        <div class="nav__notify-item nav__notify-item-view">
+                            <img src="/Assets/IMG/notify2.png" alt="" class="nav__notify-img">
+                            <a href="/notify.html" class="nav__notify-content">
+                                <span class="nav__notify-content-title">Bạn có 1 mã giảm giá mới</span>
+                                <span class="nav__notify-content-text">Giảm 50% đơn hàng đầu tiên của bạn. Tối đa 50 000 VND</span>
+                            </a>
+                        </div>
+                        <div class="nav__notify-item nav__notify-item-view">
+                            <img src="/Assets/IMG/notify3.png" alt="" class="nav__notify-img">
+                            <a href="/notify.html" class="nav__notify-content">
+                                <span class="nav__notify-content-title">Nhanh tay đặt món nhận ngay ưu đãi!</span>
+                                <span class="nav__notify-content-text">Freeship cho đơn hàng trong bán kính 5km</span>
+                            </a>
+                        </div>
+                        <div class="nav__notify-item ">
+                            <img src="/Assets/IMG/notify1.png" alt="" class="nav__notify-img">
+                            <a href="/notify.html" class="nav__notify-content">
+                                <span class="nav__notify-content-title">Chỉ 3 phút để hiểu nhau hơn</span>
+                                <span class="nav__notify-content-text">Quảng cáo của chúng tôi để lại cho bạn ý kiến gì? Bấm vào đây để hiểu nhau hơn!</span>
+                            </a>
+                        </div>
+                        <div class="nav__notify-item ">
+                            <img src="/Assets/IMG/notify2.png" alt="" class="nav__notify-img">
+                            <a href="/notify.html" class="nav__notify-content">
+                                <span class="nav__notify-content-title">Bạn có 1 mã giảm giá mới</span>
+                                <span class="nav__notify-content-text">Giảm 50% đơn hàng đầu tiên của bạn. Tối đa 50 000 VND</span>
+                            </a>
+                        </div>
+                        <footer class="nav__notify-footer">
+                            <a href="/notify.html" class="nav__notify-footer-link">Xem tất cả</a>
+                        </footer>
+                    </div>
+                </li>
+                    
+                <li class="nav__list-item">
+                    <i class="far fa-question-circle"></i>
+                    <a href="" class="nav__list-link">Hỗ Trợ</a></li>
+                <li class="nav__list-item nav__list-item-line"><a href="sign-up.html" class="nav__list-link">Đăng Ký</a></li>
+                <li class="nav__list-item"><a href="sign-in.html" class="nav__list-link">Đăng Nhập</a></li>
+            </ul>
+            
+        </nav>
+        <!-- search -->
+        <div class="header__with-search">
+            <div class="header__logo">
+                <img src="/Assets/IMG/header__logo.png" alt="" class="header__logo-img">
+            </div>
+            <!-- search-bar -->
+            <div class="header__search">
+                <div class="header__search-input-wrap">
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm tại đây">
+                    <div class="header__search-history">
+                        <h3 class="header__search-history-title">Lịch sử tìm kiếm</h3>
+                        <ul class="header__search-history-list">
+                            <li class="header__search-history-item">
+                                <a href="" class="header__search-history-item-link">Xiaomi Redmi note 10</a>
+                            </li>
+                            <li class="header__search-history-item">
+                                <a href="" class="header__search-history-item-link">Xiaomi Redmi note 11 lite</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__search-select">
+                    <span class="header__search-select-label">Trong shop</span>
+                    <i class="fas fa-angle-down"></i>
+                    <ul class="header__search-option">
+                        <li class="header__search-option-item">
+                            <span>Trong shop</span>
+                            <i class="fas fa-check"></i>
+                        </li>
+                        <li class="header__search-option-item">
+                            <span>Ngoài shop</span>
+                            <i class="fas fa-check"></i>
+                        </li>
+                    </ul>
+                </div>
+                <button class="header__search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <!-- cart -->
+            <div class="header__search-cart">
+                <img src="/Assets/IMG/cart-icon.png" alt="" class="header__search-cart-icon">
+                <div class="header__cart">
+                    <h3 class="header__cart-title">Sản phẩm mới thêm</h3>
+                    <ul class="header__cart-list">
+                        <li class="header__cart-item">
+                            <a href="/cart.html" class="header__cart-item-link">
+                            <img src="/Assets/IMG/product-img/redmi-note-11-pro.jpg" alt="" class="header__cart-item-img">
+                            <div class="header__cart-item-text">Redmi Note 11 Pro</div>
+                            <div class="header__cart-item-cost">8.129.000</div>
+                            </a>
+                        </li>
+                        <li class="header__cart-item">
+                            <a href="/cart.html" class="header__cart-item-link">
+                            <img src="/Assets/IMG/product-img/xiaomi-mi-11.jpg" alt="" class="header__cart-item-img">
+                            <div class="header__cart-item-text">Xiaomi Mi 11</div>
+                            <div class="header__cart-item-cost">8.999.000</div>
+                            </a>
+                        </li>
+                        <li class="header__cart-item">
+                            <a href="/cart.html" class="header__cart-item-link">
+                            <img src="/Assets/IMG/product-img/xiaomi-redmi-note-10.jpg" alt="" class="header__cart-item-img">
+                            <div class="header__cart-item-text">Xiaomi Redmi Note 10</div>
+                            <div class="header__cart-item-cost">3.299.000</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="header__cart-button"><a href="/cart.html" class="header__cart-button-link">Xem giỏ hàng</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- slideshow -->
+        <div class="container__slide-show">
+            <div class="slideshow__tran">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <img class="img_slide" src="/Assets/IMG/slide_img/Anh1.jfif" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img class="img_slide" src="/Assets/IMG/slide_img/Anh2.jfif" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img class="img_slide" src="/Assets/IMG/slide_img/Anh3.jfif" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img class="img_slide" src="/Assets/IMG/slide_img/Anh4.jfif" style="width:100%">
+                      </div>
+                    </div>
+                    <br>
+                    
+                    <div class="slide__dot" style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                      </div>
+                    <script src="/Assets/JS/slide.js"></script>
+            </div>
+            <div class="slideshow__aside">
+                <div class="slideshow__aside-top"></div>
+                <div class="slideshow__aside-bot"></div>
+            </div>
+        </div>
+        <!-- shop-page -->
+        <div class="container__shop-page">
+            <div class="shop-page__baner">
+                <div class="shop-page__baner-header">
+                    <a href="" class="shop-page__baner-link"><img src="/Assets/IMG/Xiaomi_logo.png" alt="" class="shop-page__baner-img"></a>
+                <div class="shop-page__baner-des">
+                    <h2 class="shop-page__baner-title">Xiaomi Việt Nam - Shop phân phối chính hãng sản phẩm Xiaomi tại Việt Nam</h2>
+                    <div class="shop-page__baner-status">Online 34 phút trước</div>
+                </div>
+                </div>
+                <div class="shop-page__button">
+                    <button class="shop-page__button-follow">
+                        <i class="fas fa-plus"></i>
+                        Theo dõi
+                    </button>
+                    <button class="shop-page__button-chat">
+                    <i class="fas fa-envelope"></i>
+                    Chat</button>
+                </div>
+            </div>
+            <ul class="shop-page__info-list">
+                <li class="shop-page__info-item">
+                    <img src="/Assets/IMG/shop_icon.png" alt="" class="shop-page__info-item-icon">
+                    <span >Sản Phẩm:</span>
+                    <span  class="shop-page__info-red">120</span>
+                </li>
+                <li class="shop-page__info-item">
+                    <img src="/Assets/IMG/icon-follow.png" alt="" class="shop-page__info-item-icon">
+                    <span >Đang theo dõi:</span>
+                    <span  class="shop-page__info-red">0</span>
+                </li>
+                <li class="shop-page__info-item">
+                    <img src="/Assets/IMG/icon-rate-chat.png" alt="" class="shop-page__info-item-icon">
+                    <span >Tỉ lệ phản hồi chat:</span>
+                    <span  class="shop-page__info-red">90.00%(Trong vài giờ)</span>
+                </li>
+            </ul>
+            <ul class="shop-page__info-list">
+                <li class="shop-page__info-item">
+                    <img src="/Assets/IMG/icon-person-follow.png" alt="" class="shop-page__info-item-icon">
+                    <span >Người theo dõi:</span>
+                    <span  class="shop-page__info-red">155.6k</span>
+                </li>
+                <li class="shop-page__info-item">
+                    <img src="/Assets/IMG/icon-star.png" alt="" class="shop-page__info-item-icon">
+                    <span >Đánh giá:</span>
+                    <span  class="shop-page__info-red">4.9 (22,7k đánh giá)</span>
+                </li>
+                <li class="shop-page__info-item">
+                    <img src="/Assets/IMG/icon-followed.png" alt="" class="shop-page__info-item-icon">
+                    <span >Đã tham gia:</span>
+                    <span  class="shop-page__info-red">27 tháng trước</span>
+                </li>
+            </ul>
+        </div>
+        <div class="container__main">
+            <!-- content-sidebar -->
+            <div class="main__sidebar">
+                <div class="main__sidebar-header">
+                    <i class="fas fa-list-ul"></i>
+                    <h2 class="main__sidebar-title">Danh Mục</h2>
+                </div>
+                <ul class="main__sidebar-list">
+                    <li class="main__sidebar-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="" class="main__sidebar-item-link">Sản phẩm</a>
+                    </li>
+                    <li class="main__sidebar-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="" class="main__sidebar-item-link">ĐIỆN THOẠI THÔNG MINH</a>
+                    </li>
+                    <li class="main__sidebar-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="" class="main__sidebar-item-link">Thiết bị Mi Home</a>
+                    </li>
+                    <li class="main__sidebar-item">
+                        <i class="fas fa-caret-right"></i>
+                        <a href="" class="main__sidebar-item-link">MÁY TÍNH BẢNG</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- content-product -->
+            <div class="main__content">
+                <!-- content-nav -->
+               <div class="content__nav">
+                   <h3 class="content__nav-title">Sắp xếp theo</h3>
+                   <button class="content__nav-button">Phổ Biến</button>
+                   <button class="content__nav-button">Mới Nhất</button>
+                   <button class="content__nav-button">Bán Chạy</button>
+                   <div class="content__nav-sort-select">
+                       <span class="content__nav-sort-title">Giá</span>
+                       <i class="fas fa-chevron-down"></i>
+                       <ul class="content__nav-sort-list">
+                            <li class="content__nav-sort-item">
+                                <a href="" class="content__nav-sort-item-link">Giá: Từ thấp đến cao</a>
+                            </li>
+                            <li class="content__nav-sort-item">
+                                <a href="" class="content__nav-sort-item-link">Giá: Từ cao đến thấp</a>
+                            </li>
+                       </ul>
+                   </div>
+               </div>
+               <!-- content-product -->
+               <div class="content__product">
+                <!-- item -->
+                <div class="content__product-rows">
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/xiaomi-redmi-note-10.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Xiaomi Redmi note 10</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 18k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ4.199.000</span>
+                                <span class="product__cost-sale">đ3.229.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 128</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/xiaomi-redmi-note-10s1.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Xiaomi Redmi note 10s</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 120k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ7.199.000</span>
+                                <span class="product__cost-sale">đ6.599.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 1,2k</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/xiaomi-mi-11.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Xiaomi Mi 11</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 500k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ9.999.000</span>
+                                <span class="product__cost-sale">đ8.999.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 12</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/xiaomi-11-lite-5g-014_1.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Xiaomi Mi 11 lite 5G</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 300k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ6.199.000</span>
+                                <span class="product__cost-sale">đ5.229.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 22</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/redmi-note-11-pro.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Xiaomi Redmi note 11 pro</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 100k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ8.999.000</span>
+                                <span class="product__cost-sale">đ8.129.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 60</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="content__product-rows">
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/can-xiaomi.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Cân thông minh xiaomi</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 18k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ4.199.000</span>
+                                <span class="product__cost-sale">đ3.229.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 128</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/may-loc-khong-khi.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Máy lọc không khí</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 120k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ8.199.000</span>
+                                <span class="product__cost-sale">đ7.599.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 1,2k</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/noi-chien-xiaomi.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Nồi chiên không dầu xiaomi</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 500k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ9.999.000</span>
+                                <span class="product__cost-sale">đ8.999.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 12</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/quat-xiaomi.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Quạt thông minh xiaomi</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 300k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ6.199.000</span>
+                                <span class="product__cost-sale">đ5.229.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 22</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/robot-hut-bui.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Robot hút bụi xiaomi</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 100k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ8.999.000</span>
+                                <span class="product__cost-sale">đ8.129.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 60</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="content__product-rows">
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/xiaomi-redmi-note-10.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Xiaomi Redmi note 10</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 18k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ4.199.000</span>
+                                <span class="product__cost-sale">đ3.229.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 128</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/xiaomi-redmi-note-10s1.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Xiaomi Redmi note 10s</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 120k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ7.199.000</span>
+                                <span class="product__cost-sale">đ6.599.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 1,2k</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/xiaomi-mi-11.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Xiaomi Mi 11</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 500k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ9.999.000</span>
+                                <span class="product__cost-sale">đ8.999.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 12</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/xiaomi-11-lite-5g-014_1.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Xiaomi Mi 11 lite 5G</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 300k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ6.199.000</span>
+                                <span class="product__cost-sale">đ5.229.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 22</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                    <div class="content__product-item">
+                        <a  href="/Order.html" class="content__product-item-link">
+                            <div class="product__header">
+                                <img src="/Assets/IMG/product-img/redmi-note-11-pro.jpg" alt="" class="product__header-img">
+                                <div class="product__header-favor">Yêu Thích</div>
+                                <div class="product__header-sale">
+                                    <span class="product__header-sale-red">30%</span> 
+                                    <span class="product__header-sale-white">Giảm</span></div>
+                            </div>
+                            <h3 class="product__title">Xiaomi Redmi note 11 pro</h3>
+                            <div class="product__sale">
+                                <span class="product__sale-voucher">Giảm 100k</span>
+                                <span class="product__sale-content">Mua để nhận quà</span>
+                            </div>
+                            <div class="product_cost">
+                                <span class="product__cost-no-sale">đ8.999.000</span>
+                                <span class="product__cost-sale">đ8.129.000</span>
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="product__rate">
+                                <i class="far fa-heart"></i>
+                                <div class="product__rate-icon-star">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="product__rate-selled">Đã bán 60</span>
+                            </div>
+                            <div class="product__adress">TP.Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                </div>
+               </div>
+            <div class="main__content-footer">
+                <div class="main__content-controller">
+                    <button class="content__controller-button"><i class="fas fa-chevron-left"></i></button>
+                    <button class="content__controller-button">1</button>
+                    <button class="content__controller-button">2</button>
+                    <button class="content__controller-button">3</button>
+                    <button class="content__controller-button">...</button>
+                    <button class="content__controller-button"><i class="fas fa-chevron-right"></i></button>
+               </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <footer class="footer">
+        <div class="footer__list">
+            <a href="" class="footer__list-link footer__list-link-no-line">CHÍNH SÁCH BẢO MẬT</a>
+            <a href="" class="footer__list-link">QUY CHẾ HOẠT ĐỘNG</a>
+            <a href="" class="footer__list-link">CHÍNH SÁCH VẬN CHUYỂN</a>
+            <a href="" class="footer__list-link">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
+        </div>
+        <div class="footer__img">
+            <a href="" class="footer__img-link">
+                <img src="/Assets/IMG/footer-img1.png" alt="" class="footer__img-link-icon">
+            </a>
+            <a href="" class="footer__img-link">
+                <img src="/Assets/IMG/footer-img1.png" alt="" class="footer__img-link-icon">
+            </a>
+            <a href="" class="footer__img-link">
+                <img src="/Assets/IMG/footer-img2.png" alt="" class="footer__img-link-icon">
+            </a>
+        </div>
+        <div class="footer__info">
+            <h5 class="footer__info-title">Công ty TNHH Shopee</h5>
+            <div class="footer__info-contact">Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</div>
+            <div class="footer__info-contact">Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)</div>
+            <div class="footer__info-contact">Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</div>
+            <div class="footer__info-contact">© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</div>
+        </div>
+    </footer>
+ <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102668132334934");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+</html>

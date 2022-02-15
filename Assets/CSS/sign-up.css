@@ -1,0 +1,187 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav__item{
+    display: flex;
+    align-items: center;
+}
+.nav__item-title{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+.nav__item-logo{
+    height: 50px;
+    margin-bottom: 14px;
+    margin-right: 10px;
+}
+.nav__item-help-link{
+    text-decoration: none;
+    color: #f15135;
+}
+/* container */
+.container{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(238 77 45);
+}
+.container__content{
+    margin: 0 auto;
+    height: 100%;
+    width: 1040px;
+    display: flex;
+}
+.content__baner{
+    width: 640px;
+    height: 100%;
+}
+.content__sign-in{
+    width: 400px;
+    height: 100%;
+}
+.sign-in__form{
+    width: 100%;
+    height: 430px;
+    background-color: white;
+    margin-top: 80px;
+    border-radius: 4px;
+    align-content: center;
+}
+
+.form__header{
+    padding: 30px 30px;
+    align-items: center;
+}
+
+.form__header-title{
+    font-size: 20px;
+}
+
+.form-message{
+    margin: 4px 30px;
+    font-size: 12px;
+}
+#email{
+    display: block;
+    margin: 0 28px;
+    height: 40px;
+    width: 80%;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+.form__sign-up-button{
+    display: block;
+    margin: 30px 26px;
+    padding: 10px 142px 10px 136px;
+    color: white;
+    background-color: #ee4d2d;
+    font-size: 15px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.form__line{
+    margin: 24px 24px;
+    border-top: 2px solid gray;
+}
+.form__other-login{
+    display: flex;
+    margin: 0 26px;
+}
+.form__button{
+    width: 110px;
+    height: 40px;
+    
+    margin: 0 4px;
+}
+.form__facebook{
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #1877f2;
+}
+.form__google{
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #4285f4;
+}
+.form__apple{
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: black;
+}
+.fa-facebook-square{
+    color: white;
+    font-size: 24px;
+    margin: 0 4px;
+}
+.form__google-btn-icon{
+    width: 22px;
+    margin: 0 6px;
+    border-radius: 3px;
+}
+.fa-apple{
+    font-size: 24px;
+    margin: 0 12px;
+    color: white;
+}
+.form__btn-text{
+    color: white;
+}
+.form__other-login-link{
+    text-decoration: none;
+}
+.form__link-sign-up{
+    margin: 20px 0;
+    text-align: center;
+    color: gray;
+    font-weight: 100;
+}
+.form__link-sign-up-link{
+    text-decoration: none;
+    color: red;
+}
+.form__about-title{
+    margin-top: 30px;
+    font-weight: 100;
+    font-size: 14px;
+    text-align: center;
+}
+.form__about-title,.form__about-title-item{
+    text-align: center;
+}
+.form__about-link{
+    font-weight: 100;
+    font-size: 14px;
+    color: red;
+    text-decoration: none;
+}
+.form__button:hover{
+    opacity: 0.9;
+}
+/* js form css */
+
+.invalid .form-message{
+    color: red;
+}
+
+.invalid .error-form{
+    border: 1px solid red !important;
+}
+
+.input-invalid .error-form{
+    border: 1px solid rgb(5, 248, 208) !important;
+}
+
+
