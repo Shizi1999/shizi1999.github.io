@@ -354,9 +354,10 @@ body{
 .container{
     margin: 50px 160px;
     height: auto;
+    min-width: 1200px;
 }
 .order{
-    width: 1200px;
+    min-width: 1200px;
     height: 700px;
     display: flex;
     background-color: white;
