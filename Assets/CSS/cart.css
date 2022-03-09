@@ -330,7 +330,6 @@ body{
 .content__body-img{
     height: 80px;
     width: 80px;
-    background-image: url(/Assets/IMG/product-img/may-loc-khong-khi.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -350,7 +349,7 @@ body{
     height: 100%;
 }
 .body__cost{
-    margin-left: 400px;
+    margin-left: 300px;
 }
 .cost-line{
     color: rgb(185, 183, 183);
@@ -489,4 +488,9 @@ body{
     outline: none;
     color: white;
     cursor: pointer;
+}
+
+.content__body-text{
+    padding-left: 10px;
+    width: 240px;
 }

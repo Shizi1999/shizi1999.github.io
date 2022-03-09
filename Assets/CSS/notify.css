@@ -426,7 +426,6 @@ body{
 .container__content-item-img{
     width: 150px;
     height: 100px;
-    background-image: url(/Assets/IMG/product-img/robot-hut-bui.jpg);
     background-size: cover;
     background-position: center center;
     margin: 10px 10px;
